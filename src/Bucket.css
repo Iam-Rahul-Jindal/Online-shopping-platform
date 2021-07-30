@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.bucket-btn {
+  --c: rgb(123, 123, 247);
+  color: black;
+  font-size: 16px;
+  background-color: rgba(140, 140, 247, 0.767);
+  border: 0.3em solid var(--c);
+  border-radius: 2em;
+  width: 15em;
+  height: 3.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  font-weight: lighter;
+}
+
+.bucket-btn span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.bucket-btn:hover {
+  color: black;
+}
+
+.bucket-btn:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.bucket-btn span:nth-child(1) {
+  --n: 1;
+}
+
+.bucket-btn span:nth-child(2) {
+  --n: 2;
+}
+
+.bucket-btn span:nth-child(3) {
+  --n: 3;
+}
+
+.bucket-btn span:nth-child(4) {
+  --n: 4;
+}
+.empty-cart {
+  background-image: url("Media/Cart1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 450px;
+  height: 378px;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.empty-cart-text {
+  margin-top: 30%;
+  margin-left: 15%;
+}
+.empty-h5 {
+  padding-left: 18px;
+  font-size: 2 em;
+  font-style: normal;
+  font-weight: 800;
+}
+.empty-p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 18px;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.Bucket-h2 {
+  background: linear-gradient(to right, rgb(250, 108, 108), rgb(202, 3, 3));
+  color: #f2f2f2;
+  width: 100%;
+  height: 50px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.7em;
+  line-height: normal;
+  text-shadow: 1.5px 1.5px black;
+}
+.bucket {
+  padding-top: 0px;
+}
+.Bucketsummary {
+  margin-top: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 233, 60, 1),
+    rgb(8, 128, 8, 0.95)
+  );
+  padding-top: 15px;
+  text-align: right;
+}
+.Totalqty {
+  padding-bottom: 40px;
+  padding-right: 250px;
+  color: rgb(44, 40, 40);
+  font-weight:bold;
+  font-size: 1.1em;
+  
+}
+.Bucketprice {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: rgb(44, 40, 40);
+  font-weight:bold;
+  font-size: 1.1em;
+  padding-right: 250px;
+}
+.ordersummary{
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding-bottom: 10px;
+  padding-right: 250px;
+}
+*{
+  margin: 0;
+  padding: 0;}
+
+.Whole{
+  background: url("Media/checkoutbg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100wh;
+  height: 150vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  color: #2a293e}
+  
+.checkoutfinal{
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border-top: 10px solid #f45702;
+  width: 50%;
+  height: 85%;
+  }
+ 
+.checklabel, .checkinput, .checktextarea{
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 12pt * 2;
+}
+    
+.checkinput{
+  margin-bottom: 12pt * 2;
+  height: 50px;}
+.checklabel{
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+    
+.checkh3{
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 12pt * 2;
+  font-style: italic;
+  margin: 0 0 .5em 0;
+margin-top: 15px;}
+    
+
+  
+.checkinput, .checktextarea{
+  border: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;}
+  
+.checkinput:focus, .checktextarea:focus{
+  border: 1px solid #6bd4b1;}
+ 
+.checktextarea{
+  resize: none;}
+  
+.checkbutton{
+  display: block;
+  float: right;
+  line-height: 12pt * 2;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
+  color: white;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  height: 50px;
+  margin-top: 25px;}
+  
+.checkbutton:hover{
+    background: inherit;
+    color: #f45702;
+    border-bottom: 2px solid #f45702;
+  font-weight: bold;}
+  
+::selection {
+  background: rgb(255, 199, 184);}
+
+@media screen and (max-width: 685px) {
+  .Bucketsummary {
+    margin-top: 15px;
+    background-image: linear-gradient(
+      to right,
+      rgb(8, 128, 8, 0.95),
+      rgb(60, 233, 60, 1)
+    );
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 25px;
+  }
+  .Bucket-h2{
+    background: linear-gradient(to right, rgb(202, 3, 3), rgb(250, 108, 108));
+  }
+  .ordersummary,.Bucketprice,.Totalqty {
+    padding-right: 0;
+  }
+  .checkoutfinal{
+   
+    padding: 0px 0px;
+    border-top: 10px solid #f45702;
+    width: 80%;
+    height: 90%;
+    }
+  .checkbutton{
+    float: left;
+    margin-left: 125px;
+  }  
+  .checklabel, .checkinput, .checktextarea{
+    width: 80%;
+    margin-left: 40px;
+  }
+  .checkh3{
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 8.5pt;
+  }
+  .checkh2{
+    text-align: center;
+  }
+  
+}

@@ -1,0 +1,41 @@
+.products-section{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-top: 10px;
+   margin-top: 10px;
+   padding-bottom: 20px;
+   
+}
+.Loading{
+   font-size: 2.6em;
+   text-align: center;
+   font-weight: bold;
+   font-family: 'Noto Sans JP', sans-serif;
+   padding-top: 50px;
+}
+.products-found{
+   text-align: center;
+   padding-top: 7px;
+   color: rgb(134, 131, 131);
+   font-weight: bold;
+}
+
+
+@media screen and (max-width: 685px){
+   .products-section{
+      flex-wrap: wrap;
+      padding-top: 4px;
+      padding-bottom: 15px;
+   }
+   .Loading{
+      font-size: 2em;
+      text-align: center;
+      font-weight: lighter;
+      font-family: 'Noto Sans JP', sans-serif;
+      padding-top: 20px;
+   }
+}
+   
+

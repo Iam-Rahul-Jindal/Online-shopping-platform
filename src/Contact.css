@@ -1,0 +1,94 @@
+.ContactUs{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 22%;
+    margin-right: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat",sans-serif;
+  }
+  .CU{
+      display: flex;
+      flex-direction: column;
+  }
+  .ContactUs h1{
+    margin-top: 0;
+    font-weight: 200;
+  }
+  .contactip{
+    border:1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+  }
+  .contactip label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .Contactbtn{
+    display: inline-block;
+    padding: 14px 0;
+    color: #ffa600;
+    text-transform: uppercase;
+    border: 1px solid #ffa600;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 9px;
+    font-weight: bold;
+  }
+  .Contactbtn:hover{
+    background-color: #fcbb4233;
+
+  }
+  .contactip input,.contactip textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .Contactbtn:hover{
+      color: #ffa600;
+  }
+  .Form{
+      height: 676px;
+    background-image: url("Media/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .Contactinfo{
+    padding-top: 25px;
+    text-align: center;
+    background-color:whitesmoke;
+  }
+  .coh2{
+    font-weight: bold;
+  }
+  .coh3{
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .coh4{
+    font-weight: bolder;
+  }
+  @media screen and (max-width: 685px){
+      .ContactUs{
+          margin-top: 66%;
+      }
+      .Form{
+          height: 640px;
+      }
+  }
